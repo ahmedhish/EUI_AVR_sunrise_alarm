@@ -8,7 +8,9 @@
 
 #ifndef SUNRISE_ALARM_H_
 #define SUNRISE_ALARM_H_
-
+/*******************************************************************************
+ *                                  Includes                                   *
+ *******************************************************************************/
 #include "LCD.h"
 #include "Timer.h"
 #include "ADC.h"
@@ -19,6 +21,9 @@
 #include <util/delay.h>
 #include <avr/interrupt.h>
 
+/*******************************************************************************
+ *                                  Type Declaration                           *
+ *******************************************************************************/
 typedef enum {
 	ERROR,
 	NO_ERROR,
@@ -40,7 +45,9 @@ typedef struct
 	signed char seconds_relative;
 	}alarm;
 	
-	
+/*******************************************************************************
+ *                             Function Prototypes     		                   *
+ *******************************************************************************/	
 	
 void sorting_timers(alarm* INPUT_TIMERS);
 error_status SET(void);

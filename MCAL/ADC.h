@@ -16,7 +16,9 @@
 
 #define interrupt55 1
 #define polling 2
-
+/*******************************************************************************
+ *                               Types Declaration                             *
+ *******************************************************************************/
 typedef enum
 {
 	VREF_AREF,
@@ -60,11 +62,57 @@ typedef enum
 	conversion_Time_out
 } ADC_ERROR_T;
 
+/*******************************************************************************
+ *                              Functions Prototypes                           *
+ *******************************************************************************/
+/*
+ * @Fn			                        :   ADC_Init_N
+ * @brief                               :   Initializes the ADC
+ *
+ * @param[in]   volt                    :   ADC reference voltage
+ *              scaler                  :   ADC prescaler
+ *
+ * @return       Init_volt_Error        :   In case there is an error in ADC reference voltage
+ *               Init_Prescaller_Error  :   In case there is an error in ADC prescaller
+ *               Init_success           :   In case ADC Initialization was successful
+ */
 ADC_ERROR_T ADC_Init_N(ADC_VoltRef_type volt, ADC_Prescaler_type scaler);
 
+/*
+ * @Fn			                        :   ADC_ReadChannel
+ * @brief                               :   Reads the ADC channel 
+ *
+ * @param[in]   volt                    :   ADC reference voltage
+ *              scaler                  :   ADC prescaler
+ *
+ * @return       conversion_NOTcomplete :   In case ADC conversion was not  completed
+ *               Channel_ERROR          :   In case there is an error in ADC channel number
+ *               conversion_Time_out    :   In case there is a conversion timeout
+ */
 ADC_ERROR_T ADC_ReadChannel(CHANNEL_T channel);
+
+/*
+ * @Fn			                        :   ADC_Interrupt_disable
+ * @brief                               :   Disables the ADC Interrupt
+ *
+ * @param[in]   void                      
+ *
+ * @return      void                   
+ *                                
+ */
 void ADC_Interrupt_disable(void);
-// extra one
+
+/*
+ * @Fn			                        :   ADC_ReadChannel_Periodic
+ * @brief                               :   Reads the ADC channel
+ *
+ * @param[in]   volt                    :   ADC reference voltage
+ *              scaler                  :   ADC prescaler
+ *
+ * @return       conversion_NOTcomplete :   In case ADC conversion was not  completed
+ *               Channel_ERROR          :   In case there is an error in ADC channel number
+ *               conversion_Time_out    :   In case there is a conversion timeout
+ */
 ADC_ERROR_T ADC_ReadChannel_Periodic(CHANNEL_T channel, u16 *data);
 
 #endif /* ADC_H_ */

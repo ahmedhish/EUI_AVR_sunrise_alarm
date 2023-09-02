@@ -1,7 +1,5 @@
-APP/sunrise_alarm.d APP/sunrise_alarm.o: ../APP/sunrise_alarm.c \
- ../APP/sunrise_alarm.h ../HAL/LCD.h ../CFG/LCD_Cfg.h \
- ../MCAL/DIO_interface.h ../library/STD_TYPES.h ../MCAL/Timer.h \
- ../library/STD_types.h ../MCAL/DIO_interface.h \
+MCAL/TIMER.d MCAL/TIMER.o: ../MCAL/TIMER.c ../MCAL/TIMER.h \
+ ../library/STD_types.h ../MCAL/DIO_interface.h ../library/STD_TYPES.h \
  ../library/ATMega32A_Registers.h ../library/STD_types.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\interrupt.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\io.h \
@@ -15,29 +13,15 @@ APP/sunrise_alarm.d APP/sunrise_alarm.o: ../APP/sunrise_alarm.c \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\version.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\fuse.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\lock.h \
- ../MCAL/ADC.h ../library/BIT_MATH.h ../HAL/LED_interface.h \
- ../HAL/Keypad.h ../CFG/Keypad_Cfg.h ../HAL/Buzzer_interface.h \
- c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h \
- c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay_basic.h \
- c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\math.h \
- c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdlib.h \
- c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stddef.h
+ ../library/Bit_math.h
 
-../APP/sunrise_alarm.h:
-
-../HAL/LCD.h:
-
-../CFG/LCD_Cfg.h:
-
-../MCAL/DIO_interface.h:
-
-../library/STD_TYPES.h:
-
-../MCAL/Timer.h:
+../MCAL/TIMER.h:
 
 ../library/STD_types.h:
 
 ../MCAL/DIO_interface.h:
+
+../library/STD_TYPES.h:
 
 ../library/ATMega32A_Registers.h:
 
@@ -67,24 +51,4 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\lock.h:
 
-../MCAL/ADC.h:
-
-../library/BIT_MATH.h:
-
-../HAL/LED_interface.h:
-
-../HAL/Keypad.h:
-
-../CFG/Keypad_Cfg.h:
-
-../HAL/Buzzer_interface.h:
-
-c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h:
-
-c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay_basic.h:
-
-c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\math.h:
-
-c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdlib.h:
-
-c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stddef.h:
+../library/Bit_math.h:

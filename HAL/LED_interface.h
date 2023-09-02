@@ -40,8 +40,38 @@ typedef enum
  *              DIO_NOK                 :   In case of Failed Operation
  */
 enu_led_error_status_t LED_Init(enu_led_color_t led_color);
+
+/*
+ * @Fn			                        :   LED_TurnOn
+ * @brief                               :   Turns on a LED
+ *
+ * @param[in]   led_color               :   Led Color  (LED_GREEN,LED_BLUE,LED_YELLOW,LED_RED)
+ *
+ * @return      LED_OK                  :   In case of Successful Operation
+ *              LED_NOK                 :   In case of Failed Operation
+ */
 enu_led_error_status_t LED_TurnOn(enu_led_color_t led_color);
+
+/*
+ * @Fn			                        :   LED_TurnOff
+ * @brief                               :   Turns off a LED
+ *
+ * @param[in]   led_color               :   Led Color  (LED_GREEN,LED_BLUE,LED_YELLOW,LED_RED)
+ *
+ * @return      LED_OK                  :   In case of Successful Operation
+ *              LED_NOK                 :   In case of Failed Operation
+ */
 enu_led_error_status_t LED_TurnOff(enu_led_color_t led_color);
+
+/*
+ * @Fn			                        :   LED_Toggle
+ * @brief                               :   Toggles a LED
+ *
+ * @param[in]   led_color               :   Led Color  (LED_GREEN,LED_BLUE,LED_YELLOW,LED_RED)
+ *
+ * @return      LED_OK                  :   In case of Successful Operation
+ *              LED_NOK                 :   In case of Failed Operation
+ */
 enu_led_error_status_t LED_Toggle(enu_led_color_t led_color);
 
 #endif /* LED_INTERFACE_H_ */

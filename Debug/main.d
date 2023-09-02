@@ -1,6 +1,7 @@
-main.d main.o: .././main.c .././sunrise_alarm.h .././LCD.h .././LCD_Cfg.h \
- .././DIO_interface.h .././STD_TYPES.h .././Timer.h .././STD_types.h \
- .././ATMega32A_Registers.h \
+main.d main.o: .././main.c ../APP/sunrise_alarm.h ../HAL/LCD.h \
+ ../CFG/LCD_Cfg.h ../MCAL/DIO_interface.h ../library/STD_TYPES.h \
+ ../MCAL/Timer.h ../library/STD_types.h ../MCAL/DIO_interface.h \
+ ../library/ATMega32A_Registers.h ../library/STD_types.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\interrupt.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\io.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\sfr_defs.h \
@@ -13,27 +14,31 @@ main.d main.o: .././main.c .././sunrise_alarm.h .././LCD.h .././LCD_Cfg.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\version.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\fuse.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\lock.h \
- .././ADC.h .././BIT_MATH.h .././LED_interface.h .././Keypad.h \
- .././Keypad_Cfg.h .././Buzzer_interface.h \
+ ../MCAL/ADC.h ../library/BIT_MATH.h ../HAL/LED_interface.h \
+ ../HAL/Keypad.h ../CFG/Keypad_Cfg.h ../HAL/Buzzer_interface.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay_basic.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\math.h
 
-.././sunrise_alarm.h:
+../APP/sunrise_alarm.h:
 
-.././LCD.h:
+../HAL/LCD.h:
 
-.././LCD_Cfg.h:
+../CFG/LCD_Cfg.h:
 
-.././DIO_interface.h:
+../MCAL/DIO_interface.h:
 
-.././STD_TYPES.h:
+../library/STD_TYPES.h:
 
-.././Timer.h:
+../MCAL/Timer.h:
 
-.././STD_types.h:
+../library/STD_types.h:
 
-.././ATMega32A_Registers.h:
+../MCAL/DIO_interface.h:
+
+../library/ATMega32A_Registers.h:
+
+../library/STD_types.h:
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\interrupt.h:
 
@@ -59,17 +64,17 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\lock.h:
 
-.././ADC.h:
+../MCAL/ADC.h:
 
-.././BIT_MATH.h:
+../library/BIT_MATH.h:
 
-.././LED_interface.h:
+../HAL/LED_interface.h:
 
-.././Keypad.h:
+../HAL/Keypad.h:
 
-.././Keypad_Cfg.h:
+../CFG/Keypad_Cfg.h:
 
-.././Buzzer_interface.h:
+../HAL/Buzzer_interface.h:
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h:
 

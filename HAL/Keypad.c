@@ -15,9 +15,6 @@ u8 kepad_value;
 #define  ROW_INIT    5
 #define  ROW_FINAL   2
 
-
-
-
  u8 key = 'u';
 
  const uint8_t KeyPad_Values[KEYPAD_COLUMNS_NUMBER][KEYPAD_COLUMNS_NUMBER] =

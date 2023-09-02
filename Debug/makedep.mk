@@ -2,21 +2,21 @@
 # Automatically-generated file. Do not edit or delete the file
 ################################################################################
 
-ADC.c
+APP\sunrise_alarm.c
 
-Buzzer_program.c
+HAL\Buzzer_program.c
 
-DIO_program.c
+HAL\Keypad.c
 
-Keypad.c
+HAL\LCD.c
 
-LCD.c
-
-LED_program.c
+HAL\LED_program.c
 
 main.c
 
-sunrise_alarm.c
+MCAL\ADC.c
 
-TIMER.c
+MCAL\DIO_program.c
+
+MCAL\TIMER.c
 

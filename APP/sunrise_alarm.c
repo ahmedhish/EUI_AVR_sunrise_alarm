@@ -7,6 +7,7 @@
 
 #include "sunrise_alarm.h"
 #include <avr/interrupt.h>
+#include <stdlib.h>
 
     extern u16 Adc_Data;
     extern u8 key;
@@ -184,13 +185,13 @@
             if (!LDR_check())
             {
                 TIMER0_set_compare(i);
-               // _delay_ms(100);
+
             }
             else
             {
                 LCD_Clear();
                 LCD_WriteString("    Good Morning     ");
-				//_delay_ms(2000);
+
                 return;
             }
         }
@@ -210,7 +211,7 @@
             {
                 LCD_Clear();
                 LCD_WriteString("    Good Morning     ");
-				//_delay_ms(2000);
+
                 return;
             }
         }
@@ -224,12 +225,12 @@
         ldr_time_sec+=seconds;
         while (ldr_time_sec<seconds);
 
-       // TIMER0_Deinit();
+
         BUZZER_TurnOff(BUZZER1);
         LCD_Clear();
         LCD_WriteString("    Good Morning     ");
         matching==NO_MATCH;
-		//_delay_ms(2000);
+
         return;
     }
 
@@ -327,6 +328,7 @@
     {
         if(clear_flag ==1)
         {
+            Display_menu(); 
             do
             {
                 MATCH();
@@ -334,7 +336,7 @@
                 {
                     Waking_sequence_Init();
                 }
-			   Display_menu();
+
                KeyPad_GetValue();
                 
 
@@ -343,7 +345,7 @@
         }
 
         LCD_Clear();
-        KeyPad_GetValue();
+
         if (key  =='0')
         {
             clear_flag =1;
@@ -382,12 +384,18 @@
 
         case'*':
             Timers_Display();
-            MATCH();
-            if (matching==MATCHED)
+            while(key !='0')
             {
-                Waking_sequence_Init();
+                KeyPad_GetValue();
+                MATCH();
+                if (matching==MATCHED)
+                {
+                    Waking_sequence_Init();
+                    break;
+                }
+                
             }
-            break;
+
 
         
         }
