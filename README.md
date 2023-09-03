@@ -8,11 +8,11 @@
 
 video link is [here](https://youtu.be/0hs6WWeo7IM?feature=shared)
 
-# Project Description: Multiple Timer Wake-Up System with LED and Buzzer
+## Project Description: Multiple Timer Wake-Up System with LED and Buzzer
 
 The project aims to create a wake-up system that allows users to set multiple timers to wake them up at different times using an ATmega32 microcontroller. The system utilizes LEDs and a buzzer to gradually wake up the user in a gentle manner. Additionally, the system provides a status display on an LCD screen to show the active alarms.
 
-# Key Components:
+### Key Components:
 1. ATmega32 Microcontroller: The ATmega32 microcontroller serves as the central processing unit of the system. It controls the overall functionality, manages the timers, and interacts with the other components.
 
 2. Timers: The system allows users to set multiple timers with different wake-up times. Each timer can be programmed independently, specifying the desired wake-up time.
@@ -23,7 +23,7 @@ The project aims to create a wake-up system that allows users to set multiple ti
 
 5. LCD Screen: An LCD screen is used to display the status of the alarms. It shows the active alarms, indicating the wake-up times that have been set.
 
-# Functionality:
+### Functionality:
 1. Timer Configuration: Users can set multiple timers through the system's interface, specifying the desired wake-up time for each timer.
 
 2. LED Gradual Brightness: As the wake-up time approaches, the LEDs start to light up gradually, emulating the sunrise. The brightness level is predetermined and cannot be adjusted by the user.
