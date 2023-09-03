@@ -6,7 +6,7 @@
 | Norhan Mohamed  | 764  |
 | Salma Mohamed | 199  |
 
-video link is [here](https://youtu.be/0hs6WWeo7IM?feature=shared)
+video link is [here](https://youtu.be/WwDwOOemtg8?si=VkJGsz_3BjQq5BVa)
 
 ## Project Description: Multiple Timer Wake-Up System with LED and Buzzer
 
